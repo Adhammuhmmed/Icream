@@ -1,0 +1,418 @@
+/* Start Global */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--section-color);
+    position: relative;
+}
+*{
+    box-sizing: border-box;
+}
+:root {
+    --section-padding-top: 60px;
+    --section-padding-bottom: 60px;
+    --section-color:#f3f6ff;
+    --main-color:#F195B2;
+    --sec-color:#41B6E2;
+    --font-color:#444;
+    --main-transition: 0.3s;
+}
+/* Small */
+
+@media (min-width: 768px) {
+    .continar {
+        width: 750px;
+    }
+}
+
+/* medium */
+
+@media (min-width: 992px) {
+    .continar {
+        width: 970px;
+    }
+}
+
+/* larg */
+
+@media (min-width: 1200px) {
+    .continar {
+        width: 1170px;
+    }
+}
+.continar {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title h1 {
+    color: #333;
+    width: 50%;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* End Global */
+
+/* Start Header */
+.header {
+    background-color: var(--main-color);
+    display: flex;
+    height: 110px;
+    position: relative;
+}
+@media (max-width: 768px) {
+    .header {
+        height: 115px;
+    }
+    }
+
+.header .continar .top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+@media (max-width: 768px) {
+    .header .continar .top-header {
+        flex-direction: column;
+    }
+}
+.header .continar .top-header .left-head {
+    display: flex;
+}
+.header .continar .top-header .left-head a {
+    transition: var(--main-transition);
+}
+.header .continar .top-header .left-head a:hover {
+    color: var(--sec-color);
+}
+@media (max-width: 992px) {
+    .header .continar .top-header .left-head {
+        display: none;
+    }
+    }
+    .header .continar .top-header h2 {
+        color: white;
+        font-size: 30px;
+        margin: 0;
+        padding-top: 20px;
+        letter-spacing: 2px;
+        text-align: center;
+        padding-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header .continar .top-header h2 span {
+        color: var(--sec-color);
+    }
+    @media (min-width: 992px) {
+        .header .continar .top-header h2 {
+            display: none;
+        }
+    }
+    @media (max-width: 440px) {
+        .header .continar .top-header h2 {
+            justify-content: center;
+            align-items: center;
+            margin-right: 25px;
+        }
+    }
+.header .continar .top-header .left-head a {
+    padding: 10px;
+    color: white;
+}
+.header .continar .top-header .right-head {
+    display: flex;
+} 
+@media (max-width: 440px) {
+    .header .continar .top-header .right-head {
+        justify-content: center;
+        align-items: center;
+        margin-right: 25px;
+    }
+}
+.header .continar .top-header .right-head a {
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    transition: var(--main-transition);
+}
+.header .continar .top-header .right-head a:hover {
+    color: var(--sec-color);
+}
+.header .continar .bottom-header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    height: 80px;
+    position: absolute;
+    width: 80%;
+    z-index: 100;
+}
+.header .continar .bottom-header .left-head {
+    display: flex;
+
+}
+.header .continar .bottom-header .left-head a {
+    padding: 10px;
+    color: var(--font-color);
+    font-size: 17px;
+    font-weight: 500;
+    transition: var(--main-transition);
+}
+@media (max-width: 991px) {
+    .header .continar .bottom-header {
+        display: none;
+    }
+}
+h1 {
+    font-size: 50px;
+    color: var(--main-color);
+    letter-spacing: 2px;
+    margin-left: 4%;
+}
+h1 span {
+    color: var(--sec-color);
+
+}
+.header .continar .bottom-header .right-head {
+    display: flex;
+}
+.header .continar .bottom-header .right-head a {
+    padding: 10px;
+    color: var(--font-color);
+    font-size: 17px;
+    font-weight: 500;
+    transition: var(--main-transition);
+}
+.header .continar .bottom-header a:hover {
+    color: var(--main-color);
+}
+/* End Header */
+
+/* Start Landing */
+.landing {
+    background-image: url(../Imges/carousel-1.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 70vh;
+    position: relative;
+    top: -22px;
+}
+@media (max-width:767px) {
+    .landing {
+        top: 0;
+    }
+}
+.landing .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+}
+.landing .overlay .text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translate(-55%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.landing .overlay .text h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: bolder;
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:440px) {
+    .landing .overlay .text h1 {
+        margin-left: 22px;
+    }
+    .landing .overlay .text a {
+        margin-left: 24px;
+    }
+}
+.landing .overlay .text a {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    transition: var(--main-transition);
+}
+.landing .overlay .text a:hover {
+    color: var(--main-color);
+}
+/* End Landing */
+
+/* Start Form */
+.form {
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
+    background-color: white;
+}
+.form form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.form form input {
+    margin-top: 20px;
+    border: 1px solid gray;
+    transition: var(--main-transition);
+    width: 71%;
+    margin-bottom: 20px;
+    height: 60px;
+    padding-left: 15px;
+    border-radius: 30px;
+}
+@media (max-width: 991px) {
+    .form form input {
+        width: 380px;
+    }
+}
+.form form input:hover {
+    border-color: var(--main-color);
+} 
+.form form input:focus {
+    outline: none;
+}
+.form form .fline {
+    display: flex;
+    gap: 10px;
+}
+@media (max-width: 991px) {
+    .form form .fline {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+.form form .fline input {
+    width: 400px;
+    height: 60px;
+    padding-left: 15px;
+    border-radius: 30px;
+}
+@media (max-width: 991px) {
+    .form form .fline input {
+        width: 380px;
+    }
+}
+.form form textarea {
+    width: 71%;
+    height: 200px;
+    padding-left: 15px;
+    border-radius: 30px;
+    padding-top: 20px;
+    color: gray;
+    transition: var(--main-transition);
+    margin-top: 20px;
+}
+@media (max-width: 991px) {
+    .form form textarea {
+        width: 380px;
+    }
+}
+.form form textarea:focus {
+    outline: none;
+}
+.form form textarea:hover {
+    border-color: var(--main-color);
+}
+/* End Form */
+/* Start Footer */
+.footer {
+    height: 60vh;
+    display: flex;
+    padding-top: var(--section-padding-top);
+    padding-bottom: var(--section-padding-bottom);
+    text-align: center;
+
+}
+.footer .continar h2 {
+    font-size: 60px;
+    color: var(--main-color);
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .continar h2 span {
+    color: var(--sec-color);
+}
+.footer .continar .social {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+}
+.footer .continar .social .circle {
+    border: 1px solid var(--sec-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 10px;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+.footer .continar .social .circle:hover {
+    background-color: var(--sec-color);
+}
+
+.footer .continar  .social i {
+    color: var(--sec-color);
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: var(--main-transition);
+}
+.footer .continar .social .circle:hover i {
+    color: white;
+}
+.footer .continar .table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+@media (max-width:767px) {
+    .footer .continar .table {
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+.footer .continar .table h3 {
+    color: #333;
+    font-size: 19px;
+}
+.footer .continar .table p {
+    font-size: 15px;
+    color: #777;
+}
+/* End Footer */
